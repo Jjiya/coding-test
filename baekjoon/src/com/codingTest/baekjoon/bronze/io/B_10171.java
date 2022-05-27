@@ -1,4 +1,4 @@
-package com.codingTest.baekjoon.bronze;
+package com.codingTest.baekjoon.bronze.io;
 
 //https://www.acmicpc.net/problem/10171
 public class B_10171 {

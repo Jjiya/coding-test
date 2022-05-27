@@ -1,4 +1,4 @@
-package com.codingTest.baekjoon.bronze;
+package com.codingTest.baekjoon.bronze.io;
 
 public class B_10718 {
     public static void test() {

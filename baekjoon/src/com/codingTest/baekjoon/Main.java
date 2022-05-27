@@ -1,6 +1,6 @@
 package com.codingTest.baekjoon;
 
-import com.codingTest.baekjoon.bronze.B_2588;
+import com.codingTest.baekjoon.bronze.io.B_2588;
 
 import java.io.IOException;
 

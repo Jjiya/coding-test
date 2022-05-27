@@ -1,4 +1,4 @@
-package com.codingTest.baekjoon.bronze;
+package com.codingTest.baekjoon.bronze.io;
 
 import java.util.Date;
 
