@@ -6,16 +6,25 @@ import java.util.ArrayList;
 public class B_2588 {
     public static void test() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList<Integer> inputs = new ArrayList<>();
-        ArrayList<Integer> splitNum = new ArrayList<>();
+        ArrayList<String> inputs = new ArrayList<>();
         String tmp = "";
 
-        while ((tmp = br.readLine().trim()) != null) {
-            int tmpNum = Integer.parseInt(tmp);
-            inputs.add(tmpNum);
+        while ((tmp = br.readLine()) != null) {
+            inputs.add(tmp);
         }
-//        한글자씩 잘라서 곱하는거 해야함
 
+        char[] charList = inputs.get(1).toCharArray();
+        int idx = charList.length;
+        int[] splitNums = new int[idx];
 
+        for (char charNum : charList) {
+            splitNums[--idx] = Integer.parseInt(String.valueOf(charNum));
+        }
+
+        int firstNum = Integer.parseInt(inputs.get(0));
+        for (int num : splitNums) {
+            System.out.println(firstNum * num);
+        }
+        System.out.print(firstNum * Integer.parseInt(inputs.get(1)));
     }
 }
