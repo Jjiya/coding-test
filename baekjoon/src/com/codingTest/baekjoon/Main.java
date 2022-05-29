@@ -1,12 +1,12 @@
 package com.codingTest.baekjoon;
 
-import com.codingTest.baekjoon.bronze.conditional.B_9498;
+import com.codingTest.baekjoon.bronze.conditional.B_2525;
 
-import java.io.IOException;
+import java.io.*;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-        B_9498 test = new B_9498();
-        test.test();
-    }
+  public static void main(String[] args) throws IOException {
+    B_2525 test = new B_2525();
+    test.test();
+  }
 }
