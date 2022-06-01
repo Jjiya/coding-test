@@ -1,12 +1,12 @@
 package com.codingTest.baekjoon;
 
-import com.codingTest.baekjoon.bronze.loop.B_2742;
+import com.codingTest.baekjoon.bronze.loop.B_2439;
 
 import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    B_2742 test = new B_2742();
+    B_2439 test = new B_2439();
     test.test();
   }
 }
