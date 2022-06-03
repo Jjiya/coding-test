@@ -1,12 +1,12 @@
 package com.codingTest.baekjoon;
 
-import com.codingTest.baekjoon.bronze.loop.B_1110;
+import com.codingTest.baekjoon.bronze.oneDimensionalArray.B_4344;
 
 import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    B_1110 test = new B_1110();
+    B_4344 test = new B_4344();
     test.test();
   }
 }
