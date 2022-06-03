@@ -1,7 +1,6 @@
 package com.codingTest.baekjoon.bronze.oneDimensionalArray;
 
 import java.io.*;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class B_4344 {
@@ -19,18 +18,22 @@ public class B_4344 {
 
       int[] scoreList = new int[studentCount];
 
-      double avg = 0;
+      int sum = 0;
 
       for (int i = 0; i < scoreList.length; i++) {
         int score = Integer.parseInt(st.nextToken());
         scoreList[i] = score;
-        avg += (double) score / studentCount;
+        sum += score;
       }
 
-      double finalAvg = avg;
-      double ratio = Arrays.stream(scoreList).filter(score -> finalAvg < score).toArray().length / (double) studentCount * 100;
+      double avg = sum / studentCount;
+      int count = 0;
 
-      sb.append(String.format("%.3f", ratio)).append("%").append("\n");
+      for (int i = 0; i < studentCount; i++) {
+        if (avg < scoreList[i]) count++;
+      }
+
+      sb.append(String.format("%.3f", count / (double) studentCount * 100)).append("%").append("\n");
 
       c--;
     }
