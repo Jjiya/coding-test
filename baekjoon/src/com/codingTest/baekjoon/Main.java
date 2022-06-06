@@ -1,12 +1,12 @@
 package com.codingTest.baekjoon;
 
-import com.codingTest.baekjoon.bronze.string.B_5622;
+import com.codingTest.baekjoon.silver.string.S_1316;
 
 import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    B_5622 test = new B_5622();
+    S_1316 test = new S_1316();
     test.test();
   }
 }
