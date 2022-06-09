@@ -1,13 +1,12 @@
 package com.codingTest.baekjoon;
 
-
-import com.codingTest.baekjoon.silver.basicMath1.S_2839;
+import com.codingTest.baekjoon.bronze.basicMath1.B_10757;
 
 import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    S_2839 test = new S_2839();
+    B_10757 test = new B_10757();
     test.test();
   }
 }
