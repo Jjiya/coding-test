@@ -12,15 +12,16 @@ public class S_1929 {
     int min = Integer.parseInt(st.nextToken());
     int max = Integer.parseInt(st.nextToken());
 
-    for (int i = min; i < max; i++) {
+    for (int i = min; i <= max; i++) {
       if (isPrime(i)) sb.append(i + "\n");
     }
     System.out.print(sb);
   }
 
   static boolean isPrime(int checkNum) {
+    if (checkNum == 1) return false;
     if (checkNum == 2 || checkNum == 3) return true;
-    for (int i = 2; i * i < checkNum; i++) {
+    for (int i = 2; i * i <= checkNum; i++) {
       if (checkNum % i == 0) return false;
     }
     return true;
