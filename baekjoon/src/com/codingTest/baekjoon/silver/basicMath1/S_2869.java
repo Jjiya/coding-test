@@ -3,10 +3,7 @@ package com.codingTest.baekjoon.silver.basicMath1;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class S_2869 {
-  /**
-   * failure
-   **/
+public class S_2869 { // 22.06.13에 bronze로 바뀐 것 확인
   public static void test() throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     StringTokenizer st = new StringTokenizer(br.readLine());
@@ -15,12 +12,11 @@ public class S_2869 {
     double down = Double.parseDouble(st.nextToken());
     double arrive = Double.parseDouble(st.nextToken());
 
-
-
-// a-b을 v로 나눈다음에
-// 그 값을 b씩 더하면서 일수를 빼까?ㅋㅋㅋㅋㅋㅋ
-
+    System.out.print((int) Math.ceil((arrive - up) / (up - down)) + 1);
   }
+
+  // a-b을 v로 나눈다음에
+  // 그 값을 b씩 더하면서 일수를 빼까?ㅋㅋㅋㅋㅋㅋ
 
   //  당연하게도 시간초과
   public static void test2() throws IOException {
