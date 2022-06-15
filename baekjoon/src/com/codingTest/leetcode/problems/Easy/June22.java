@@ -4,6 +4,27 @@ import java.util.HashMap;
 
 public class June22 {
 
+  public boolean isPalindrome1(int x) {
+    if (x < 0) return false;
+
+    int reverse = 0;
+    while (reverse < x) {
+      System.out.printf("-- reverse < x => %d < %d --\n\n", reverse, x);
+      System.out.printf("reverse = (%d * 10) + (%d %% 10) == %d + %d = ", reverse, x, (reverse * 10), (x % 10));
+      reverse = reverse * 10 + x % 10;
+      System.out.printf("%d \n", reverse);
+      x = x / 10;
+      System.out.printf("x = %d / 10 = %d\n\n", x, x / 10);
+    }
+
+    System.out.printf("x == reverse (%d == %d) || x == reverse / 10 (%d == %d)\n", x, reverse, x, reverse / 10);
+    return (x == reverse || x == reverse / 10);
+  }
+
+  public boolean isPalindrome(int x) {
+    return (x + "").contentEquals(new StringBuilder().append(x).reverse());
+  }
+
   //  O(n)
   public int[] twoSum1(int[] nums, int target) {
 //    numsValue, numsIndex
