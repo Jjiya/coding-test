@@ -4,6 +4,46 @@ import java.util.HashMap;
 
 public class June22 {
   //  https://leetcode.com/problems/roman-to-integer/
+  public int romanToInt1(String s) {
+    int sum = 0, i = 0;
+
+    while (i < s.length() - 1) {
+      int num = convertRomanToNum(s.charAt(i));
+      int nextNum = convertRomanToNum(s.charAt(i + 1));
+      if (num < nextNum) {
+        sum += nextNum - num;
+        i++;
+      } else {
+        sum += num;
+      }
+      i++;
+    }
+
+//    끝 두자리가 계산 된 경우면 sum 반환, 아니면 sum에 마지막 1글자 더해줘야함.
+    return i == s.length() ? sum : sum + convertRomanToNum(s.charAt(s.length() - 1));
+  }
+
+  int convertRomanToNum(char romanChar) {
+    switch (romanChar) {
+      case 'I':
+        return 1;
+      case 'V':
+        return 5;
+      case 'X':
+        return 10;
+      case 'L':
+        return 50;
+      case 'C':
+        return 100;
+      case 'D':
+        return 500;
+      case 'M':
+        return 1000;
+      default:
+        return 0;
+    }
+  }
+
   public int romanToInt(String s) {
     HashMap<String, Integer> romanNumerals = new HashMap<>();
     romanNumerals.put("I", 1);
