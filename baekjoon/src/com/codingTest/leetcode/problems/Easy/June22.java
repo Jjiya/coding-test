@@ -42,6 +42,19 @@ public class June22 {
       default:
         return 0;
     }
+    /*
+     * java 15일 경우
+     * return switch(romanChar){
+     *       case 'I'-> 1;
+     *       case 'V'-> 5;
+     *       case 'X'-> 10;
+     *       case 'L'-> 50;
+     *       case 'C'-> 100;
+     *       case 'D'-> 500;
+     *       case 'M'-> 1000;
+     *       default -> 0;
+     *     };
+     */
   }
 
   public int romanToInt(String s) {
