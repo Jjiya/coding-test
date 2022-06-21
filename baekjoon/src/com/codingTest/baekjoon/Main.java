@@ -1,11 +1,11 @@
 package com.codingTest.baekjoon;
 
-import com.codingTest.baekjoon.silver.bruteForce.S_7568;
+import com.codingTest.baekjoon.silver.bruteForce.S_1018;
 
 import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    new S_7568().test();
+    new S_1018().test();
   }
 }
