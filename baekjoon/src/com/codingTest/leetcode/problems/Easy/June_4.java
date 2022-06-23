@@ -2,7 +2,7 @@ package com.codingTest.leetcode.problems.Easy;
 
 import java.util.HashMap;
 
-public class June22 {
+public class June_4 {
   //  https://leetcode.com/problems/roman-to-integer/
   public int romanToInt1(String s) {
     int sum = 0, i = 0;
