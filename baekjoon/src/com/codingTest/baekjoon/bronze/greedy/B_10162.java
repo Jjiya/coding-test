@@ -14,6 +14,30 @@ public class B_10162 {
       return;
     }
 
+    StringBuilder sb = new StringBuilder(3);
+
+    sb.append(time / a).append(" ");
+    time -= (time / a) * a;
+
+    sb.append(time / b).append(" ");
+    time -= (time / b) * b;
+
+    sb.append(time / c);
+    time -= (time / c) * c;
+
+    System.out.print(sb);
+  }
+
+  public void test1() throws IOException {
+    int a = (5 * 60), b = 60, c = 10;
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    int time = Integer.parseInt(br.readLine());
+
+    if (time % 10 != 0) {
+      System.out.print(-1);
+      return;
+    }
+
     if (time % a == 0) {
       System.out.print((time / a) + " 0 0");
       return;
