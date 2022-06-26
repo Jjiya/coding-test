@@ -4,9 +4,28 @@ import java.util.Arrays;
 import java.util.Stack;
 
 public class June_5 {
-  public boolean isValid(String s) {
-    Stack<Character> brackets = new Stack();
-    Stack<Character> waitClose = new Stack();
+
+  public boolean validParentheses(String s) {
+//    열어주는 bracket을 stack에 담을 필요는 없으니까... 이렇게 하나만 있으면 되는구나
+    Stack<Character> brackets = new Stack<>();
+
+    for (char bracket : s.toCharArray()) {
+//      열어주는 괄호일 경우에는
+      if (getReverseBracket(bracket) != ' ') {
+//        stack에 반대로 닫아주는 놈을 넣어주고
+        brackets.push(getReverseBracket(bracket));
+//        닫아주는 괄호일 경우, stack이 비어있는 지 확인한 다음 하나 꺼내서 지금 닫아주는 bracket과 동일한 괄호인지 확인
+      } else if (brackets.empty() || brackets.pop() != bracket) {
+        return false;
+      }
+    }
+//    다 닫아줬으면 true일 것이고 혹시 아니면 false
+    return brackets.empty();
+  }
+
+  public boolean validParentheses_1(String s) {
+    Stack<Character> brackets = new Stack<>();
+    Stack<Character> waitClose = new Stack<>();
 
     for (int i = 0; i < s.length(); i++) {
       brackets.push(s.charAt(i));
@@ -57,7 +76,7 @@ public class June_5 {
     return sb.toString();
   }
 
-  public String longestCommonPrefix1(String[] strs) {
+  public String longestCommonPrefix_1(String[] strs) {
     if (strs.length == 1) {
       return strs[0];
     }
