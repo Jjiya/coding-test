@@ -3,8 +3,43 @@ package codingTest.leetcode.problems.Easy;
 import java.util.Arrays;
 import java.util.Stack;
 
+import codingTest.leetcode.problems.Easy.definition.*;
+
 public class June_5 {
 
+  /**
+   * 21. Merge Two Sorted Lists
+   **/
+  public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    ListNode sortedLists = new ListNode();
+
+    if (list1 == null) return list2;
+    if (list2 == null) return list1;
+
+    if (list1.val > list2.val) {
+      sortedLists.val = list1.val;
+      sortedLists.next = mergeTwoLists(list1.next, list2);
+    } else {
+      sortedLists.val = list2.val;
+      sortedLists.next = mergeTwoLists(list1, list2.next);
+    }
+
+    return sortedLists;
+  }
+  /**
+   * Definition for singly-linked list.
+   * public class ListNode {
+   *     int val;
+   *     ListNode next;
+   *     ListNode() {}
+   *     ListNode(int val) { this.val = val; }
+   *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+   * }
+   */
+
+  /**
+   * 20. Valid Parentheses
+   **/
   public boolean validParentheses(String s) {
 //    열어주는 bracket을 stack에 담을 필요는 없으니까... 이렇게 하나만 있으면 되는구나
     Stack<Character> brackets = new Stack<>();
@@ -57,6 +92,9 @@ public class June_5 {
     };
   }
 
+  /**
+   * 14. Longest Common Prefix
+   **/
   public String longestCommonPrefix(String[] strs) {
     if (strs.length == 1) return strs[0];
 

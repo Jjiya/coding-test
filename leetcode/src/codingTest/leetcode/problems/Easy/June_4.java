@@ -4,6 +4,8 @@ import java.util.HashMap;
 
 public class June_4 {
   //  https://leetcode.com/problems/roman-to-integer/
+  /** 9. Palindrome Number **/
+
   public int romanToInt1(String s) {
     int sum = 0, i = 0;
 
@@ -91,6 +93,8 @@ public class June_4 {
     return sum;
   }
 
+  /** 9. Palindrome Number **/
+
   public boolean isPalindrome1(int x) {
     if (x < 0) return false;
 
@@ -112,6 +116,8 @@ public class June_4 {
     return (x + "").contentEquals(new StringBuilder().append(x).reverse());
   }
 
+
+  /** 1. Two Sum **/
   //  O(n)
   public int[] twoSum1(int[] nums, int target) {
 //    numsValue, numsIndex
