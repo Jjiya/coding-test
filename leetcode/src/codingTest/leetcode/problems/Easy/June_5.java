@@ -9,22 +9,24 @@ public class June_5 {
 
   /**
    * 21. Merge Two Sorted Lists
+   * TODO: solved again later
+   * (더) 헷갈렸던 이유:
+   * list1과 list2는 자체적으로 정렬된 상태인데, 그게 아닌 줄 알고있었음. 문제를 잘 읽어볼 것
    **/
   public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-    ListNode sortedLists = new ListNode();
-
     if (list1 == null) return list2;
     if (list2 == null) return list1;
 
-    if (list1.val > list2.val) {
-      sortedLists.val = list1.val;
-      sortedLists.next = mergeTwoLists(list1.next, list2);
+    ListNode sorted = new ListNode();
+    if (list1.val < list2.val) {
+      sorted.val = list1.val;
+      sorted.next = mergeTwoLists(list1.next, list2);
     } else {
-      sortedLists.val = list2.val;
-      sortedLists.next = mergeTwoLists(list1, list2.next);
+      sorted.val = list2.val;
+      sorted.next = mergeTwoLists(list1, list2.next);
     }
 
-    return sortedLists;
+    return sorted;
   }
   /**
    * Definition for singly-linked list.
