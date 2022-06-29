@@ -1,4 +1,4 @@
-package com.codingTest.baekjoon.yonseiUnivOpenContest;
+package com.codingTest.baekjoon.contest.yonseiUnivOpenContest;
 
 import java.io.*;
 import java.util.StringTokenizer;

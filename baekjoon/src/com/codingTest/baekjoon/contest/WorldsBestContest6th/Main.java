@@ -1,4 +1,4 @@
-package com.codingTest.baekjoon.WorldsBestContest6th;
+package com.codingTest.baekjoon.contest.WorldsBestContest6th;
 
 import java.io.*;
 

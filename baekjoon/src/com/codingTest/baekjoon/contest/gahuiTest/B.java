@@ -1,4 +1,4 @@
-package com.codingTest.baekjoon.gahuiTest;
+package com.codingTest.baekjoon.contest.gahuiTest;
 
 import java.io.*;
 import java.util.StringTokenizer;
