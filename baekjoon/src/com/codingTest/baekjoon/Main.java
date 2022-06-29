@@ -6,6 +6,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    new B_22864().test();
+    new B_18238().test();
   }
 }
