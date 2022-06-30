@@ -4,7 +4,10 @@ import java.util.HashMap;
 
 public class June_4 {
   //  https://leetcode.com/problems/roman-to-integer/
-  /** 9. Palindrome Number **/
+
+  /**
+   * 13. Roman to Integer
+   **/
 
   public int romanToInt1(String s) {
     int sum = 0, i = 0;
@@ -26,37 +29,16 @@ public class June_4 {
   }
 
   int convertRomanToNum(char romanChar) {
-    switch (romanChar) {
-      case 'I':
-        return 1;
-      case 'V':
-        return 5;
-      case 'X':
-        return 10;
-      case 'L':
-        return 50;
-      case 'C':
-        return 100;
-      case 'D':
-        return 500;
-      case 'M':
-        return 1000;
-      default:
-        return 0;
-    }
-    /*
-     * java 15일 경우
-     * return switch(romanChar){
-     *       case 'I'-> 1;
-     *       case 'V'-> 5;
-     *       case 'X'-> 10;
-     *       case 'L'-> 50;
-     *       case 'C'-> 100;
-     *       case 'D'-> 500;
-     *       case 'M'-> 1000;
-     *       default -> 0;
-     *     };
-     */
+    return switch (romanChar) {
+      case 'I' -> 1;
+      case 'V' -> 5;
+      case 'X' -> 10;
+      case 'L' -> 50;
+      case 'C' -> 100;
+      case 'D' -> 500;
+      case 'M' -> 1000;
+      default -> 0;
+    };
   }
 
   public int romanToInt(String s) {
@@ -93,7 +75,9 @@ public class June_4 {
     return sum;
   }
 
-  /** 9. Palindrome Number **/
+  /**
+   * 9. Palindrome Number
+   **/
 
   public boolean isPalindrome1(int x) {
     if (x < 0) return false;
@@ -117,7 +101,9 @@ public class June_4 {
   }
 
 
-  /** 1. Two Sum **/
+  /**
+   * 1. Two Sum
+   **/
   //  O(n)
   public int[] twoSum1(int[] nums, int target) {
 //    numsValue, numsIndex
