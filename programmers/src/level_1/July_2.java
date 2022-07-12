@@ -3,19 +3,43 @@ package level_1;
 import java.util.*;
 
 public class July_2 {
+// 신규 아이디 추천
+  public String solution(String new_id) {
+    String re_new_id = new_id
+        .toLowerCase()
+        .replaceAll("[^\\w-_.]", "")
+        .replaceAll("[.]{2,}", ".")
+        .replaceAll("^[.]|[.]$", "");
 
-//  로또 최고 순위와 최저 순위
+    if (re_new_id.isEmpty()) {
+      re_new_id = "a";
+    }
+
+    if (re_new_id.length() >= 16) {
+      re_new_id = re_new_id
+          .substring(0, 15)
+          .replaceAll("[.]$", "");
+    }
+
+    while (re_new_id.length() < 3) {
+      re_new_id += re_new_id.charAt(re_new_id.length() - 1);
+    }
+
+    return re_new_id;
+  }
+
+  //  로또 최고 순위와 최저 순위
   public int[] solution(int[] lottos, int[] win_nums) {
     lottos = Arrays.stream(lottos).filter(num -> num != 0).toArray();
 
     Arrays.sort(lottos);
     Arrays.sort(win_nums);
 
-    int correctCount = 0, winNumIdx = 0,  unknownCount = 6 - lottos.length;
+    int correctCount = 0, winNumIdx = 0, unknownCount = 6 - lottos.length;
 
-    for(int i = 0; i < lottos.length; i++) {
-      for(int j = winNumIdx; j < win_nums.length; j++){
-        if(lottos[i] == win_nums[j]){
+    for (int i = 0; i < lottos.length; i++) {
+      for (int j = winNumIdx; j < win_nums.length; j++) {
+        if (lottos[i] == win_nums[j]) {
           winNumIdx = j + 1;
           correctCount++;
           break;
@@ -28,8 +52,8 @@ public class July_2 {
     return answer;
   }
 
-  public int convertRank(int correctCount){
-    return switch(correctCount){
+  public int convertRank(int correctCount) {
+    return switch (correctCount) {
       case 6 -> 1;
       case 5 -> 2;
       case 4 -> 3;
@@ -39,7 +63,7 @@ public class July_2 {
     };
   }
 
-//  신고 결과 받기
+  //  신고 결과 받기
   public int[] solution(String[] id_list, String[] report, int k) {
     /*
         1. 유저 별 신고한 유저를 저장한다.
