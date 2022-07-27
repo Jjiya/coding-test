@@ -1,5 +1,6 @@
 package com.codingTest.baekjoon;
 
+import com.codingTest.baekjoon.bronze.basicMath1.B_10699;
 import com.codingTest.baekjoon.bronze.basicMath1.B_2747;
 import com.codingTest.baekjoon.bronze.greedy.*;
 import com.codingTest.baekjoon.bronze.implement.*;
@@ -11,6 +12,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    new S_9465().test();
+    new B_10699().test();
   }
 }
