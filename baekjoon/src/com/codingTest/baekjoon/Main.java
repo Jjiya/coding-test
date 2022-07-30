@@ -7,11 +7,12 @@ import com.codingTest.baekjoon.bronze.implement.*;
 import com.codingTest.baekjoon.bronze.io.*;
 import com.codingTest.baekjoon.bronze.string.*;
 import com.codingTest.baekjoon.silver.dynamicProgramming.*;
+import com.codingTest.baekjoon.silver.greedy.*;
 
 import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    new B_1100().test();
+    new S_11399().test();
   }
 }
