@@ -10,6 +10,7 @@ import com.codingTest.baekjoon.silver.dynamicProgramming.*;
 import com.codingTest.baekjoon.silver.graph.*;
 import com.codingTest.baekjoon.silver.greedy.*;
 import com.codingTest.baekjoon.silver.implement.*;
+import com.codingTest.baekjoon.silver.recursive.*;
 import com.codingTest.baekjoon.silver.sorting.*;
 import com.codingTest.baekjoon.silver.string.*;
 
@@ -17,6 +18,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    new B_1934().test();
+    new S_1769().test();
   }
 }
