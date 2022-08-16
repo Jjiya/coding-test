@@ -8,6 +8,43 @@ public class B_10989 {
   public void test() throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     int n = Integer.parseInt(br.readLine());
+
+    int[] arr = new int[n];
+
+    for (int i = 0; i < n; i++) {
+      arr[i] = Integer.parseInt(br.readLine());
+    }
+
+    int[] count = new int[10001];
+
+    for (int j = 0; j < n; j++) {
+      count[arr[j]]++;
+    }
+
+    for (int k = 1; k < count.length; k++) {
+      count[k] += count[k - 1];
+    }
+
+    int[] result = new int[n];
+
+    for (int l = arr.length - 1; l >= 0; l--) {
+      int number = arr[l];
+      count[number]--;
+      result[count[number]] = number;
+    }
+
+    StringBuilder sb = new StringBuilder();
+    for (int number : result) {
+      sb.append(number).append("\n");
+    }
+
+    System.out.print(sb);
+  }
+
+
+  public void test1() throws IOException {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    int n = Integer.parseInt(br.readLine());
     int[] array = new int[n];
     sorted = new int[n];
 
