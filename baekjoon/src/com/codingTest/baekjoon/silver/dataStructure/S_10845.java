@@ -1,4 +1,4 @@
-package com.codingTest.baekjoon.silver.implement;
+package com.codingTest.baekjoon.silver.dataStructure;
 
 import java.io.*;
 
