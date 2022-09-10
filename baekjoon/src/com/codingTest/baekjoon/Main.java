@@ -10,11 +10,12 @@ import com.codingTest.baekjoon.silver.dataStructure.*;
 import com.codingTest.baekjoon.silver.graph.*;
 import com.codingTest.baekjoon.silver.implement.*;
 import com.codingTest.baekjoon.silver.sorting.*;
+import com.codingTest.baekjoon.silver.string.S_1764;
 
 import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    new S_11659().test();
+    new S_1764().test();
   }
 }
