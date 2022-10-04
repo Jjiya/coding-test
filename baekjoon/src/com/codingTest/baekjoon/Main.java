@@ -11,12 +11,13 @@ import com.codingTest.baekjoon.silver.graph.*;
 import com.codingTest.baekjoon.silver.implement.*;
 import com.codingTest.baekjoon.silver.recursive.S_9184;
 import com.codingTest.baekjoon.silver.sorting.*;
+import com.codingTest.baekjoon.silver.sorting.S_1026;
 import com.codingTest.baekjoon.silver.string.*;
 
 import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    new S_1748().test();
+    new S_1026().test();
   }
 }
