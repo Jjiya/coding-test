@@ -10,6 +10,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    new S_2776().test();
+    new B_9506().test();
   }
 }
