@@ -8,6 +8,28 @@ public class S_1735 {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     StringTokenizer st = new StringTokenizer(br.readLine());
 
+    int a1 = Integer.parseInt(st.nextToken());
+    int b1 = Integer.parseInt(st.nextToken());
+
+    st = new StringTokenizer(br.readLine());
+
+    int a2 = Integer.parseInt(st.nextToken());
+    int b2 = Integer.parseInt(st.nextToken());
+
+    // 분수 합
+    int sumA = (a1 * b2) + (a2 * b1);
+    int sumB = b1 * b2;
+
+    // 기약 분수 구하기(분수와 분모의 최대 공약수를 구해서 나누어주기)
+    int gcd = gcd(sumA, sumB);
+
+    System.out.print((sumA / gcd) + " " + (sumB / gcd));
+  }
+
+  public void test1() throws IOException {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    StringTokenizer st = new StringTokenizer(br.readLine());
+
     int[] numeric = new int[4];
     numeric[0] = Integer.parseInt(st.nextToken());
     numeric[1] = Integer.parseInt(st.nextToken());
