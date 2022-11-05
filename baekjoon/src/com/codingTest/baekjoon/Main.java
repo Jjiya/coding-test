@@ -7,6 +7,7 @@ import com.codingTest.baekjoon.bronze.implement.*;
 import com.codingTest.baekjoon.bronze.string.*;
 import com.codingTest.baekjoon.gold.dataStructure.G_9935;
 import com.codingTest.baekjoon.silver.dataStructure.*;
+import com.codingTest.baekjoon.silver.graph.*;
 import com.codingTest.baekjoon.silver.greedy.S_14916;
 import com.codingTest.baekjoon.silver.greedy.S_16953;
 import com.codingTest.baekjoon.silver.implement.S_1475;
@@ -18,6 +19,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    new S_11866().test();
+    new Bfs().test();
   }
 }
