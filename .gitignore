@@ -1,4 +1,6 @@
 .idea
+.vscode
 out
 
-conding-test.iml
+coding_test.iml
+javaAlgorithms.iml
