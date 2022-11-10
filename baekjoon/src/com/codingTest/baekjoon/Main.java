@@ -7,6 +7,7 @@ import com.codingTest.baekjoon.bronze.implement.*;
 import com.codingTest.baekjoon.bronze.string.*;
 import com.codingTest.baekjoon.gold.dataStructure.G_9935;
 import com.codingTest.baekjoon.silver.dataStructure.*;
+import com.codingTest.baekjoon.silver.dynamicProgramming.S_1010;
 import com.codingTest.baekjoon.silver.graph.*;
 import com.codingTest.baekjoon.silver.greedy.S_14916;
 import com.codingTest.baekjoon.silver.greedy.S_16953;
@@ -21,6 +22,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    new B_5532().test();
+    new S_1010().test();
   }
 }
