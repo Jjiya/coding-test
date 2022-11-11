@@ -14,6 +14,7 @@ import com.codingTest.baekjoon.silver.greedy.S_16953;
 import com.codingTest.baekjoon.silver.implement.S_1475;
 import com.codingTest.baekjoon.silver.implement.S_1735;
 import com.codingTest.baekjoon.silver.implement.S_2108;
+import com.codingTest.baekjoon.silver.recursive.S_9184;
 import com.codingTest.baekjoon.silver.sorting.S_11004;
 import com.codingTest.baekjoon.silver.sorting.S_11656;
 import com.codingTest.baekjoon.silver.sorting.S_5800;
@@ -22,6 +23,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    new S_1010().test();
+    new S_9184().test();
   }
 }
