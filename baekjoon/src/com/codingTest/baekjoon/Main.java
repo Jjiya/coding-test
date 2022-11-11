@@ -2,6 +2,7 @@ package com.codingTest.baekjoon;
 
 import com.codingTest.baekjoon.bronze.basicMath1.*;
 import com.codingTest.baekjoon.bronze.bruteForce.B_2309;
+import com.codingTest.baekjoon.bronze.combinatorialism.B_11050;
 import com.codingTest.baekjoon.bronze.greedy.*;
 import com.codingTest.baekjoon.bronze.implement.*;
 import com.codingTest.baekjoon.bronze.string.*;
@@ -23,6 +24,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    new S_9184().test();
+    new B_11050().test();
   }
 }
