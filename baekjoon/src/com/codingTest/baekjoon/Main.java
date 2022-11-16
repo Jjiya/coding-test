@@ -24,6 +24,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    new S_2606().test();
+    new B_9093().test();
   }
 }
