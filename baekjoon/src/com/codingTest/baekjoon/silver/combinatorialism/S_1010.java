@@ -1,4 +1,4 @@
-package com.codingTest.baekjoon.silver.dynamicProgramming;
+package com.codingTest.baekjoon.silver.combinatorialism;
 
 import java.io.*;
 import java.util.HashMap;
