@@ -1,4 +1,4 @@
-package com.codingTest.baekjoon.silver.combinatorialism;
+package com.codingTest.baekjoon.silver.backTracking;
 
 import java.io.*;
 import java.util.StringTokenizer;
