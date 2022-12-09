@@ -13,6 +13,7 @@ public class G_14502 {
   static int maxSafetyAreaCount = 0;
   static int n;
   static int m;
+  static int notSpreadCount = -3; // 0 3개는 벽으로 변경할 것이기 때문에 count - 3
 
   // https://www.acmicpc.net/problem/14502
   public void test() throws IOException {
@@ -30,11 +31,14 @@ public class G_14502 {
         int num = Integer.parseInt(st.nextToken());
         map[i][j] = num;
 
-        if (num == 2) {
+        if (num == 0) {
+          notSpreadCount++;
+        } else if (num == 2) {
           virusNodes.add(new Node(i, j));
         }
       }
     }
+
     backTracking(0);
 
     System.out.print(maxSafetyAreaCount);
@@ -42,15 +46,10 @@ public class G_14502 {
 
   static void backTracking(int count) {
     if (count == 3) {
-      getSafetyCount(n, m);
-
-      while (!spreadNodes.isEmpty()) {
-        Node spreadNode = spreadNodes.poll();
-        map[spreadNode.rowIdx][spreadNode.colIdx] = 0;
-      }
-
+      getSafetyCount();
       return;
     }
+
     for (int i = 0; i < n; i++) {
       for (int j = 0; j < m; j++) {
         if (map[i][j] == 0) {
@@ -66,17 +65,18 @@ public class G_14502 {
 //  2. 0의 개수 세기
 //  3. 안전 구역 개수 max 비교하기
 
-  static void getSafetyCount(int n, int m) {
+  static void getSafetyCount() {
     for (Node virusNode : virusNodes) {
       spreadVirus(virusNode.rowIdx, virusNode.colIdx);
     }
 
-    int count = 0;
-    for (int i = 0; i < n; i++) {
-      count += Arrays.stream(map[i]).filter(value -> value == 0).count();
-    }
+//    기존 0의 개수 (-3 => 벽으로 변환시킨 0의 개수) - 감염된 0의 개수
+    maxSafetyAreaCount = Math.max(maxSafetyAreaCount, notSpreadCount - spreadNodes.size());
 
-    maxSafetyAreaCount = Math.max(maxSafetyAreaCount, count);
+    while (!spreadNodes.isEmpty()) {
+      Node spreadNode = spreadNodes.poll();
+      map[spreadNode.rowIdx][spreadNode.colIdx] = 0;
+    }
   }
 
   static void spreadVirus(int rowIdx, int colIdx) {
