@@ -1,6 +1,7 @@
 package com.codingTest.baekjoon;
 
 import com.codingTest.baekjoon.bronze.dynamicProgramming.B_24416;
+import com.codingTest.baekjoon.gold.graph.G_14502;
 import com.codingTest.baekjoon.gold.graph.G_7576;
 import com.codingTest.baekjoon.silver.backTracking.*;
 import com.codingTest.baekjoon.silver.dynamicProgramming.*;
@@ -11,6 +12,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    new S_4963().test();
+    new G_14502().test();
   }
 }
