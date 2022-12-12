@@ -14,6 +14,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    new S_20126().test();
+    new S_11403().test();
   }
 }
