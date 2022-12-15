@@ -1,7 +1,6 @@
 package com.codingTest.baekjoon;
 
-import com.codingTest.baekjoon.silver.basicMath1.S_14490;
-import com.codingTest.baekjoon.silver.dynamicProgramming.*;
+import com.codingTest.baekjoon.silver.math.S_14490;
 
 import java.io.*;
 
