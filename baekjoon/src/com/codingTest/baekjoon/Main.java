@@ -9,6 +9,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    G_16946.test();
+    S_1325.test();
   }
 }
