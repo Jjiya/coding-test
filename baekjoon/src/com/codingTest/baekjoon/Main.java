@@ -1,7 +1,9 @@
 package com.codingTest.baekjoon;
 
+import com.codingTest.baekjoon.bronze.implement.B_1547;
 import com.codingTest.baekjoon.bronze.sorting.B_2587;
 import com.codingTest.baekjoon.gold.graph.G_16946;
+import com.codingTest.baekjoon.gold.graph.G_2573;
 import com.codingTest.baekjoon.silver.dataStructure.S_11478;
 import com.codingTest.baekjoon.silver.graph.*;
 import com.codingTest.baekjoon.silver.implement.S_2563;
@@ -10,6 +12,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    S_11478.test();
+    B_1547.test();
   }
 }
