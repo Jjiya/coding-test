@@ -8,6 +8,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    S_1946.test();
+    G_20055.test();
   }
 }
