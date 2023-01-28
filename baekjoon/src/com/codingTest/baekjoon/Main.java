@@ -6,12 +6,13 @@ import com.codingTest.baekjoon.bronze.math.B_5086;
 import com.codingTest.baekjoon.gold.graph.*;
 import com.codingTest.baekjoon.gold.greedy.*;
 import com.codingTest.baekjoon.silver.graph.S_16173;
+import com.codingTest.baekjoon.silver.graph.S_2210;
 import com.codingTest.baekjoon.silver.greedy.*;
 
 import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    G_11000.test();
+    S_2210.test();
   }
 }
