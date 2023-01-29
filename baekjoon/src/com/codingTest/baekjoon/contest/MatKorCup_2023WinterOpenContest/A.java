@@ -3,7 +3,7 @@ package com.codingTest.baekjoon.contest.MatKorCup_2023WinterOpenContest;
 import java.util.*;
 
 public class A {
-  //  https://www.acmicpc.net/contest/view/931/1
+  //  https://www.acmicpc.net/contest/problem/931/1
   public static void test() {
     Scanner scanner = new Scanner(System.in);
 
