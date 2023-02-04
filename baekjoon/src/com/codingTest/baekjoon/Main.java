@@ -11,6 +11,7 @@ import com.codingTest.baekjoon.gold.greedy.*;
 import com.codingTest.baekjoon.silver.graph.S_16173;
 import com.codingTest.baekjoon.silver.graph.S_2210;
 import com.codingTest.baekjoon.silver.greedy.*;
+import com.codingTest.baekjoon.silver.implement.S_2108;
 import com.codingTest.baekjoon.silver.implement.S_2504;
 import com.codingTest.baekjoon.silver.sorting.S_18870;
 
@@ -18,6 +19,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    S_18870.test();
+    S_2108.test();
   }
 }
