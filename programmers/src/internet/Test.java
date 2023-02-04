@@ -1,4 +1,4 @@
-package zumInternet;
+package internet;
 
 import java.util.PriorityQueue;
 
@@ -66,7 +66,6 @@ public class Test {
   }
 
   public static class Solution2 {
-    //    https://programmers.co.kr/app/with_setting/tests/27649/challenges/algorithms/5562
     /*
     우선순위 큐
     1페이지 인쇄 시 1초 소요
