@@ -4,12 +4,13 @@ import com.codingTest.baekjoon.bronze.implement.*;
 import com.codingTest.baekjoon.bronze.string.B_11655;
 import com.codingTest.baekjoon.gold.graph.*;
 import com.codingTest.baekjoon.gold.greedy.*;
+import com.codingTest.baekjoon.silver.dynamicProgramming.S_11052;
 import com.codingTest.baekjoon.silver.greedy.*;
 
 import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    B_11655.test();
+    S_11052.test();
   }
 }
