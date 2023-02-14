@@ -2,5 +2,4 @@
 .vscode
 out
 
-coding_test.iml
-javaAlgorithms.iml
+*.iml
