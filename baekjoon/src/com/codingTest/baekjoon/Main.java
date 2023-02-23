@@ -1,5 +1,6 @@
 package com.codingTest.baekjoon;
 
+import com.codingTest.baekjoon.bronze.greedy.B_19564;
 import com.codingTest.baekjoon.bronze.greedy.B_2930;
 import com.codingTest.baekjoon.bronze.implement.*;
 import com.codingTest.baekjoon.gold.graph.*;
@@ -13,6 +14,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    B_2930.test();
+    B_19564.test();
   }
 }
