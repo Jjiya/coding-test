@@ -13,6 +13,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    S_6550.test();
+    S_11256.test();
   }
 }
