@@ -21,6 +21,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    S_2012.test();
+    S_19941.test();
   }
 }
