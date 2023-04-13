@@ -6,6 +6,7 @@ import com.codingTest.baekjoon.bronze.implement.*;
 import com.codingTest.baekjoon.bronze.math.B_11382;
 import com.codingTest.baekjoon.bronze.math.B_13458;
 import com.codingTest.baekjoon.bronze.math.B_27433;
+import com.codingTest.baekjoon.bronze.math.B_2903;
 import com.codingTest.baekjoon.bronze.string.B_1371;
 import com.codingTest.baekjoon.bronze.string.B_27866;
 import com.codingTest.baekjoon.bronze.string.B_3448;
@@ -27,6 +28,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    B_11365.test();
+    B_2903.test();
   }
 }
