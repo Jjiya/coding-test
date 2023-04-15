@@ -23,12 +23,13 @@ import com.codingTest.baekjoon.silver.implement.S_3085;
 import com.codingTest.baekjoon.silver.math.S_25206;
 import com.codingTest.baekjoon.silver.sorting.S_10825;
 import com.codingTest.baekjoon.silver.sorting.S_11004;
+import com.codingTest.baekjoon.silver.sorting.S_1755;
 import com.codingTest.baekjoon.silver.sorting.S_2075;
 
 import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    B_1264.test();
+    S_1755.test();
   }
 }
