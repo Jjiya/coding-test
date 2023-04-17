@@ -3,10 +3,7 @@ package com.codingTest.baekjoon;
 import com.codingTest.baekjoon.bronze.bruteForce.B_19523;
 import com.codingTest.baekjoon.bronze.greedy.*;
 import com.codingTest.baekjoon.bronze.implement.*;
-import com.codingTest.baekjoon.bronze.math.B_11382;
-import com.codingTest.baekjoon.bronze.math.B_13458;
-import com.codingTest.baekjoon.bronze.math.B_27433;
-import com.codingTest.baekjoon.bronze.math.B_2903;
+import com.codingTest.baekjoon.bronze.math.*;
 import com.codingTest.baekjoon.bronze.string.B_1264;
 import com.codingTest.baekjoon.bronze.string.B_1371;
 import com.codingTest.baekjoon.bronze.string.B_27866;
@@ -27,6 +24,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    S_11931.test();
+    B_9085.test();
   }
 }
