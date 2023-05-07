@@ -14,11 +14,12 @@ import com.codingTest.baekjoon.silver.implement.S_1302;
 import com.codingTest.baekjoon.silver.implement.S_3085;
 import com.codingTest.baekjoon.silver.math.S_25206;
 import com.codingTest.baekjoon.silver.sorting.*;
+import com.codingTest.baekjoon.silver.string.S_1652;
 
 import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    B_14909.test();
+    B_10822.test();
   }
 }
