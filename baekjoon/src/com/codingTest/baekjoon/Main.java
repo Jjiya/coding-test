@@ -4,6 +4,7 @@ import com.codingTest.baekjoon.bronze.bruteForce.B_19523;
 import com.codingTest.baekjoon.bronze.greedy.*;
 import com.codingTest.baekjoon.bronze.implement.*;
 import com.codingTest.baekjoon.bronze.math.*;
+import com.codingTest.baekjoon.bronze.sorting.B_15819;
 import com.codingTest.baekjoon.bronze.string.*;
 import com.codingTest.baekjoon.gold.graph.*;
 import com.codingTest.baekjoon.gold.greedy.*;
@@ -20,6 +21,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    S_11652.test();
+    B_15819.test();
   }
 }
