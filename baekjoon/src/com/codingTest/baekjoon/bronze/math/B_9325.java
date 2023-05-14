@@ -1,4 +1,4 @@
-package com.codingTest.baekjoon.silver.math;
+package com.codingTest.baekjoon.bronze.math;
 
 import java.io.*;
 import java.util.StringTokenizer;
