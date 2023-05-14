@@ -13,6 +13,7 @@ import com.codingTest.baekjoon.silver.graph.*;
 import com.codingTest.baekjoon.silver.greedy.*;
 import com.codingTest.baekjoon.silver.implement.S_1302;
 import com.codingTest.baekjoon.silver.implement.S_3085;
+import com.codingTest.baekjoon.silver.math.B_9325;
 import com.codingTest.baekjoon.silver.math.S_25206;
 import com.codingTest.baekjoon.silver.sorting.*;
 import com.codingTest.baekjoon.silver.string.S_1652;
@@ -21,6 +22,6 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    S_16212.test();
+    B_9325.test();
   }
 }
